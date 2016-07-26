@@ -1,9 +1,10 @@
 env:
 VMware® Workstation 12 Pro
 CentOS-7-x86_64-Minimal-1511.iso
+hd 60G
 
  
-
+elasticsearch:
 yum install java-1.8.0-openjdk.x86_64
 yum install wget
 wget https://download.elastic.co/elasticsearch/release/org/elasticsearch/distribution/rpm/elasticsearch/2.3.4/elasticsearch-2.3.4.rpm	
@@ -13,7 +14,7 @@ systemctl start elasticsearch.service
 systemctl status elasticsearch.service
 
 
-bro
+bro:
 yum install git
 git clone --recursive git://git.bro.org/bro
 yum install cmake make gcc gcc-c++ flex bison libpcap-devel openssl-devel python-devel swig zlib-devel
