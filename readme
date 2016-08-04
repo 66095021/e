@@ -1,0 +1,1 @@
+openssl enc -d  -rc4 -in  x -out y 
