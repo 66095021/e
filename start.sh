@@ -1,3 +1,6 @@
+ip addr add 10.10.28.1/16 dev eth0
+ip route add default via 10.10.0.1
+
 start  zookeeper & kafka :
 
  /root/kafka/zookeeper/bin/zkServer.sh start
